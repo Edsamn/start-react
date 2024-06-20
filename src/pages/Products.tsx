@@ -1,4 +1,5 @@
 import ButtonDefault from '../components/ButtonDefault';
+import DefaultPage from '../config/layout/DefaultPage';
 
 function Products() {
   function handleClick() {
@@ -7,10 +8,12 @@ function Products() {
 
   return (
     <>
-      <h1>Produtos</h1>
-      <div style={{ textAlign: 'center' }}>
-        <ButtonDefault label="Botão produto" action={handleClick} />
-      </div>
+      <DefaultPage>
+        <h1>Produtos</h1>
+        <div style={{ textAlign: 'center' }}>
+          <ButtonDefault label="Botão produto" action={handleClick} />
+        </div>
+      </DefaultPage>
     </>
   );
 }

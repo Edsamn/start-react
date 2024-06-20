@@ -1,4 +1,5 @@
 import ButtonDefault from '../components/ButtonDefault';
+import DefaultPage from '../config/layout/DefaultPage';
 
 function Home() {
   function handleClick() {
@@ -7,10 +8,12 @@ function Home() {
 
   return (
     <>
-      <h1>Home</h1>
-      <div style={{ textAlign: 'center' }}>
-        <ButtonDefault label="Botão Home" action={handleClick} />
-      </div>
+      <DefaultPage>
+        <h1>Home</h1>
+        <div style={{ textAlign: 'center' }}>
+          <ButtonDefault label="Botão Home" action={handleClick} />
+        </div>
+      </DefaultPage>
     </>
   );
 }
