@@ -1,4 +1,4 @@
-import ButtonDefault from '../components/ButtonDefault';
+import ButtonDefault from '../components/button-default/ButtonDefault';
 import DefaultPage from '../config/layout/DefaultPage';
 
 function Home() {

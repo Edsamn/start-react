@@ -1,3 +1,4 @@
+import DefaultCard from '../../components/default-card/DefaultCard';
 import Footer from '../../components/footer/Footer';
 import NavBar from '../../components/nav-bar/NavBar';
 import DefaultPageStyled from './DefaultPageStyled';
@@ -10,7 +11,9 @@ function DefaultPage({ children }: DefaultPageProps) {
   return (
     <>
       <NavBar></NavBar>
-      <DefaultPageStyled>{children}</DefaultPageStyled>
+      <DefaultPageStyled>
+        <DefaultCard>{children}</DefaultCard>
+      </DefaultPageStyled>
       <Footer></Footer>
     </>
   );
